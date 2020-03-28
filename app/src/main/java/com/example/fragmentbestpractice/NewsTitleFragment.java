@@ -58,12 +58,12 @@ public class NewsTitleFragment extends Fragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        if (getActivity().findViewById(R.id.news_content_layout) != null) {
-
-            isTwoPane = true;
-        } else {
-            isTwoPane = false;
-        }
+//        if (getActivity().findViewById(R.id.news_content_layout) != null) {
+//
+//            isTwoPane = true;
+//        } else {
+//            isTwoPane = false;
+//        }
     }
 
 
@@ -96,7 +96,7 @@ public class NewsTitleFragment extends Fragment {
                         NewsContentFragment newsContentFragment =
                                 (NewsContentFragment) getFragmentManager()
                                         .findFragmentById(R.id.news_content_fragment);
-                        newsContentFragment.refresh(news.getTitle(), news.getContent());
+//                        newsContentFragment.refresh(news.getTitle(), news.getContent());
                     } else {
                         NewsContentActivity.actionStart(getActivity(),
                                 news.getTitle(), news.getContent());
